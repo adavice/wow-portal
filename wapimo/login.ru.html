@@ -1,0 +1,15 @@
+<div class="main privacy authorization">
+	<div class="wrap">
+		<h2>Получить контент</h2>
+		<div class="wrapForm">
+			<h3>Авторизуйтесь используя ваш логин и пароль:</h3>
+			<form id="getContent" method="post">
+				<input type="hidden" name="page" id="loginPage" value="login">
+				<input type="tel" name="u" pattern="^[0-9]{3,45}$" id="loginUser" placeholder="Логин" maxlength="18"required>
+				<input type="password" name="c" id="accessСode" placeholder="Код доступа" maxlength="12" required>
+				<p class="error">* Пожалуйста введите правильный логин и код доступа</p>
+				<button type="submit" name="submit" id="getContentButton" value="Submit"><img src="http://ru.appptika.com/images/kontent.png" alt=""></button>
+			</form>
+		</div>
+	</div>
+</div>

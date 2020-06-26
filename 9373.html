@@ -1,0 +1,1207 @@
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Open Sans&amp;display=swap" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.4;
+
+    }
+    /* -------------------header-----------------*/
+    #header-sticky {
+        background-color: #19256F;
+        color: #fff;
+        font-family: 'Open Sans';
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    .header__content {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__content span {
+        font-weight: 700;
+    }
+
+    /* -------------------first screen-----------------*/
+    .offer {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .offer__header {
+        font-size: 48px;
+        font-weight: 800;
+    }
+    .offer__header span {
+        background-color: #00AAE7;
+    }
+    .offer__text {
+        font-size: 20px;
+    }
+    .offer__text li {
+        padding-bottom: 7px;
+        position: relative;
+    }
+    .offer__text li:before {
+        content: " ";
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: -28px;
+        top: 5px;
+        background: url(https://img.vodonet.net/wrM6QwKtKIjr9bc.png);
+        background-position: center;
+        background-size: contain;
+    }
+
+    /* -------------------second screen-----------------*/
+    section#product {
+        background: #e3d0c9;
+        padding: 100px 0px;
+    }
+    .product {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .product__info {
+        max-width: 600px;
+    }
+    .info__header {
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 1.2;
+        padding-bottom: 25px;
+    }
+    .info__rate {
+        display: none;
+
+    }
+    .info__rate span {
+        position: relative;
+    }
+    .info__rate span:before {
+        content: "\f005\f005\f005\f005\f005";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #EABE12;
+        font-size: 14px;
+    }
+    .old {
+        text-decoration: line-through;
+        color: #BDBDBD;
+        font-size: 20px;
+        padding-right: 15px;
+    }
+    .new {
+        font-size: 25px;
+        color: #0ac2ff;
+        font-weight: 800;
+    }
+    .info__list {
+        font-size: 16px;
+        font-family: 'Open Sans';
+    }
+    .info__list li {
+        position: relative;
+    }
+    .info__list li::before {
+        content: " ✔";
+        display: block;
+        position: absolute;
+        left: -20px;
+        top: 0px;
+        color: #0ac2ff;
+        font-weight: 800;
+    }
+    .payment-partners {
+        max-width: 300px;
+        padding-bottom: 30px;
+    }
+    .payment-partners img {
+        width: 100%;
+    }
+
+    a.btn__buy {
+        background-color: #ffb400;
+        color: #fff;
+        font-weight: 600;
+        padding: 8px 40px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    /* -------------------third screen-----------------*/
+    section#review {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    .review__header {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 800;
+        padding-bottom: 35px;
+    }
+    .review__img {
+        text-align: center;
+    }
+
+    .review__header span {
+        color: #0ac2ff;
+    }
+
+    /* -------------------fourth screen-----------------*/
+    section#video-review {
+        border-top: solid 1px #e4e4e4;
+        padding-top: 75px;
+    }
+    .review__content {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 35px;
+    }
+    .review__video {
+        width: 470px;
+        padding: 20px;
+        text-align: center;
+    }
+    .review__video iframe {
+        width: 100%;
+    }
+    .video__name  {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    .video__comment {
+        font-size: 14px;
+
+    }
+    .video__name span {
+        font-weight: 600;
+    }
+    /* -------------------fifth screen-----------------*/
+    .timer__block {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    section#timer {
+        background: #19256F;
+        padding: 70px 0;
+    }
+    div#countdown {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+    .countdown-number {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px;
+    }
+    span.countdown-time {
+        font-size: 34px;
+    }
+    .timer__header {
+        color: #fff;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        background: #f24854;
+        padding: 20px;
+        border-radius: 5px 5px 0px 0px;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .timer__in-stock {
+        display: flex;
+        font-size: 24px;
+        justify-content: space-between;
+        padding: 20px 0 10 0;
+    }
+    .progress-bar {
+        width: 84%;
+        height: 7px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    /* ----------------------other code-------------------------*/
+    a {
+        color: #78b41f;
+        text-decoration: none;
+    }
+    div {
+        direction: ltr;}
+    h3 { color:#CC0000;
+        display: block;
+        font-size: 28px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;}
+
+    body, html {
+        font-family: 'Open Sans', sans-serif;
+        direction: ltr;}
+    .addressline {
+        font-size: 14px !important;
+        margin: -15px 0 20px;
+    }
+
+    #gbar {
+        width: 100%;
+    }
+
+    .text { font-size: 24px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .webp-icon {position: absolute;
+        top: -12px;
+        left:0;
+        z-index: 200;}
+    .lbluebg {
+        background: #21A3DA;
+        border-radius: 10px;
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .dbluebg {
+        background: #029902;}
+    .wrap-nopad li .list-img img {
+        max-width: 100%;
+    }
+
+
+
+    .orange p {
+        color: #fff;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: advertisingextraboldregular;
+        font-size: 19px;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+        padding: 8px 0
+
+    }
+    #tvscr {
+        width: 455px;
+        height: 265px;
+        background-color: #000;
+        margin-left: 12px;
+
+    }
+    .live-script {
+        color: #fff;
+    }
+
+    .wtext {
+        color: #fff;
+        line-height: 40px;
+    }
+
+    .wtext span {
+        font-size: 20px;
+    }
+
+    .wtext p {
+        font-size: 30px;
+    }
+
+    .toppad25 {
+        padding-top: 25px;
+    }
+
+    .mtop20 {
+        margin-top: 30px;
+    }
+
+    .mtop50 {
+        margin-top: 50px;}
+
+
+    #customCheckbox {
+        margin-top: 15px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+        border-radius: 4px;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+
+    }
+    .col2{
+        display:block;
+        float: left;
+
+        padding: 11px 0 64px;
+
+    }
+    .bottext1 {
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 15px 0;
+    }
+
+    .bottext2 {
+        font-weight: 800;
+        font-size: 22px;
+        border-radius: 10px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .ortext {
+        color: #FBB657;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+
+
+    .icontext {
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+        padding-top: 10px;
+        color: #333;;
+        display: block;
+        position: relative;
+        margin-left: 30px;
+
+    }
+
+    #img18{
+        width: 10%;
+
+        margin-top: 20px;
+    }
+    .register-box .termsblock,
+    .register-box.ar .termsblock {
+        color: #ccc;
+        font-size: 12px;
+        margin-left: 20px;}
+    .wrapper {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+
+    }
+    .wrap2{
+        display: flex ;
+        flex-direction: column }
+    .wrap2 {
+        display: table;
+        margin: 0 auto;
+        position: relative;
+        vertical-align: baseline;
+        height: 100%;
+    }
+
+    .popsection {
+        background-color:#fff;
+        height: 800px max;
+        max-width:max-content;
+        padding: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+
+    }
+    header.pop {
+        color: #fff;
+        border-bottom: 2px solid #a0e374;
+    }
+    header.pop img {
+        width: 180px;
+        margin: 0 auto;
+        display: block;
+        height: auto;
+        padding: 10px;
+
+    }
+    .form-group {
+        padding-bottom: 30px;
+        margin-top: -40px;
+    }
+    .form input, .form select {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        font-size: 20px;
+
+        border: 1px solid rgb(181, 181, 181);
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+        border-radius: 10px;
+        direction: ltr;
+
+    }
+    .long {
+        width: 294px;
+        background-color: #7daa11;
+        background-attachment: fixed;
+        color: #ffffff;
+
+        box-sizing: content-box;
+        padding-bottom: 15px;
+        box-shadow: -3px 8px 34px -16px #242424;
+        border-radius: 10px;
+        direction: ltr;
+
+
+    }
+
+    .form .submit {
+        width: 881px;
+
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        border-radius: 10px;
+        border: none;
+        background: #ff6634;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        width: 90%;
+        height: 60px;
+        text-shadow: 0 0 10px;
+        /*      animation: buttonsub 1s infinite alternate;*/
+    }
+    .submit:hover {
+        cursor: pointer;
+    }
+    @keyframes buttonsub{
+        0% { color: #fff; background: linear-gradient(30deg, transparent, #7edf0e, transparent); }
+        100% {color: #ff3300; background: linear-gradient(30deg, transparent, #fff, transparent); text-shadow: 0 0 0; }
+    }
+    #fhead {font-size: 26px;
+        font-weight: bold;
+        border-radius: 10px 10px 0 0;
+        background-color: #ff6634;
+        display: block;
+        width: 100%;
+        line-height: 2;
+
+    }
+    @keyframes attention {
+        0% { color: #fff; text-shadow: 0 0 10px #fff;  }
+        100%{color: #aafffb; text-shadow: 0 0 0px #7edf0e; }
+
+    }
+    #fhead2{font-size: 25px;}
+    .checking {
+        position: absolute;
+        top: 800px;
+        left: 500px;
+        font-size: 30px;
+        color: #fff;
+    }
+    .checking input {
+        position: absolute;
+        left: 280px;
+        top: 6px;
+        width: 100px;
+        transform: scale(2.2);
+    }
+
+    .form input, .form select {padding-left: 10px; height: 40px;}
+
+    }
+
+    @media (max-width: 980px) {
+
+    }
+
+
+    .long_flow {
+
+        padding: 52px 0 0 0;
+        background-image: height: 100%;
+    }
+
+    .sv-skin.form-ar .tooltip {
+        line-height: initial;
+    }
+
+
+    .red-text {
+        color: #ff3300;
+        text-decoration: line-through;
+    }
+    .green-text {
+        color: #029902;
+    }
+    .form > span {
+        display: block;
+        margin-left: 18px;
+        font-size: 24px;
+        text-align: left;
+    }
+    .form > span:nth-child(3) {margin-bottom: 20px;}
+    .icontext img {
+        position: absolute;
+        width: 20px;
+        left: -30px;
+    }
+    .h3 {font-size: 28px;}
+    .col2{ margin-top:0px; width: 620px; }
+
+    #header2 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color:#333;
+        margin: 0px 0 30px;
+    }
+    #header3 {
+        width: 600px;
+        float: right;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color:#333;
+
+    }
+    .wrap-nopad {
+        width: 960px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .wrap-nopad .lvl-title-v1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .delivery-block-v3 h2 {
+        margin-bottom: 10px;
+    }
+    .lvl-title-v1 {
+        margin: 0 0 40px;
+        text-align: center;
+        font-size: 38px;
+        line-height: 1.3em;
+        letter-spacing: 1px;
+    }
+    .list-type-v2>li {
+        display: inline-block;
+        margin: 10px 0 0;
+        padding: 0 15px;
+        vertical-align: top;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+    .delivery-block-v3 .list-img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 20px;
+        line-height: 134px;
+        text-align: center;
+        border: 2px solid #00aeef;
+        border-radius: 80px;
+    }
+    .list-type-v2 .list-cont h4 {
+        margin: 0 0 5px;
+        font-weight: 700;
+        font-size: 17px;}
+    .delivery-block-v3 .list-type-v2>li:nth-child(2):before {
+        content: '2';
+    }
+    .delivery-block-v3 .list-type-v2>li:before {
+        top: 120px;
+        left: 50%;
+        margin: 0 0 0 -17px;
+    }
+    .delivery-block-v3 .list-type-v2>li:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        z-index: 99;
+        line-height: 34px;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        background: #fff;
+        border-radius: 50%;}
+    .delivery-block-v3 .list-type-v2>li {
+        position: relative;
+        width: 145px;
+        margin: 0 40px;
+
+    }
+    .delivery-block-v3 .list-type-v2>li:nth-child(1):before {
+        content: '1';
+    }
+    .delivery-block-v3 .list-type-v2>li:nth-child(3):before {
+        content: '3';
+    }
+    .list-type-v2>li {
+        display: inline-block;
+        margin: 10px 0 0;
+        padding: 0 15px;
+        vertical-align: top;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+    .terms {
+        font-size: 16px;
+        color: #45949a;
+    }
+    .flex_sect{
+        display: flex;
+    }
+    /*0000000000000000000000000000000000000000000000000000000   MOBILE   0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+    @media (max-width: 980px){
+
+        .offer__header {
+            font-size: 36px;
+        }
+        .offer {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 50px 0;
+            justify-content: space-around;
+        }
+        .offer-content {
+            padding-left: 20px;
+        }
+        .offer__text {
+            font-size: 16px;
+        }
+        .offer__text ul {
+            padding: 0px 25px;
+        }
+        .offer-img img {
+            max-width: 318px;
+        }
+        section#product {
+            padding: 50px 0px;
+        }
+        .product__info {
+            padding: 0 20px;
+        }
+        .info__header {
+            font-size: 24px;
+            line-height: 1.2;
+            padding-bottom: 15px;
+        }
+        .addressline {
+            margin: 0px 0px 60px;
+        }
+        .fhead{line-height: 1.5;
+            padding: 15px;
+            box-sizing: border-box;
+
+        }
+        .flex_sect{
+            flex-direction: column;
+        }
+        #header2 { text-align: center;
+            float: right;
+            margin-top: 40px;
+            font-size: 38px;
+            font-weight: bold;
+        }
+        #customCheckbox { width: 50px;
+            height: 50px;
+            right: 49px;
+            margin-top: 50px; }
+        .wrap, .wrap-nopad {
+            width: 640px;
+        }
+
+        .col2 {margin-top: -50px;}
+
+        h3 { color: #CC0000;}
+
+        .videoblock, .long_flow {width: 100%; height: 250px;}
+        .wrapper {width: 980px; height: max-content;}
+
+
+        .form .submit { height: 60px;  margin-bottom: 40px; }
+
+        header.pop {
+            box-shadow: 0px 5px 5px #000;
+            width: 980px;
+
+        }
+        .text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            bottom: 20px;
+            text-align: center;
+            right: unset;}
+
+        .lbluebg {
+            width: 85%;
+
+            border-radius: 15px;
+            margin-top: 100px;
+
+        }
+
+        .wtext {
+
+            border-radius: 50px; line-height: 75px;}
+
+
+        .form input, .form select {
+            height: unset;
+
+        }
+        .delivery-block-v3 .list-type-v2>li {
+            position: relative;
+
+            width: 320px;
+            margin-bottom: 80px;}
+        .delivery-block-v3 .list-img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+            line-height: 134px;
+            text-align: center;
+            border: 2px solid #00aeef;
+            border-radius: 180px;
+        }
+        .list-type-v2 .list-cont h4 {
+            margin: 0 0 5px;
+            font-weight: 700;
+
+        }
+
+        .popsection {
+            background-color:  #fff;
+            width: 80%;
+            padding:15px;
+
+        }
+
+        .col1 {margin: 60px 0 0;}
+        input, select {padding: 7px;
+
+        }
+
+
+        .wrap2{
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        .col2{order:2}
+        .formblock{order:3;
+        }
+        .lineblock{order:2}
+
+
+        .form.long { width:93%;  }
+
+        .orange marquee {
+            line-height: 23px;
+        }
+
+        .borde {
+            width: 94%
+        }
+        .borde input {
+            width: 100%
+        }
+        .wrapper {
+
+            width: 100%;
+            height: content;
+
+        }
+        .form > span {
+            display: block;
+            margin-left: 32px;
+
+            text-align: left;
+        }
+        .icontext {float: none;}
+        .wrap2 {    width: 90%;
+            padding: 0px 3%;}
+        header.pop {
+            box-shadow: 0px 5px 5px #000;
+            width: 980px;
+
+        }
+        footer { padding: 60px 0px 60px; }
+
+
+        .footer-logos-pay img { height: 90px !important  }
+        .footer-logos img { height:180px !important }
+        .form input, .form select {
+
+
+            margin-top: 10px;
+        }
+        .icontext {
+            padding-top: 40px;
+        }
+        #gbar {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+
+    }
+    @media (max-width: 480px){
+        .logo img {
+            max-width: 130px;
+        }
+        .offer {
+            max-width: 380px;
+            margin: 0 auto;
+            padding: 50px 0;
+            display: block;
+        }
+        .offer-img img {
+            max-width: 290px;
+        }
+        .product__gallery img {
+            max-width: 300px;
+        }
+        .product {
+            max-width: 380px;
+            margin: 0 auto;
+            display: block;
+            justify-content: space-around;
+        }
+        .product__gallery {
+            text-align: center;
+        }
+        .info__header, .info__price {
+            text-align: center;
+        }
+        .button__buy, .offer-img {
+            text-align: center;
+        }
+        section#review {
+            padding: 35px 0;
+        }
+        .review__img img {
+            max-width: 380px;
+        }
+        .review__header {
+            font-size: 30px;
+        }
+        .review__content {
+            max-width: 380px;
+            display: block;
+        }
+        .review__video {
+            width: 330px;
+        }
+        .timer__header {
+            max-width: 315px;
+            margin: 0 auto;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .timer__in-stock {
+            display: flex;
+            font-size: 18px;
+            justify-content: space-between;
+            padding: 15px 0 10 0;
+        }
+        .progress-bar {
+            height: 5px;
+        }
+        .deadline {
+            font-size: 14px;
+        }
+    }</style>
+<div class="wrapp">
+    <section id="header-sticky">
+        <div class="header__content">
+            <div class="logo">
+                <img alt="Max Wellness" src="http://img.mobilenobo.net/xhc4dSMMGRkAUvd.png" /></div>
+            <div class="button__buy">
+                <a class="btn__buy" href="#">Buy</a></div>
+        </div>
+    </section>
+    <section id="main">
+        <div class="offer">
+            <div class="offer-content">
+                <div class="offer__header">
+                 Buy one &
+                    <span><br>Get 1 For Free</span>
+                </div>
+                <div class="offer__text">
+                    <ul>
+                        <li>
+                            Exceptional anxiety, insomnia, pain relief</li>
+                        <li>
+                            All-natural ingredients</li>
+                        <li>
+                            Improves brain function and helps with weight</li>
+                        <li>
+                            100% satisfaction and money-back guarantee</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="offer-img">
+                <img alt="" src="http://img.mobilenobo.net/TmB6VnNIJfM_Yb_.jpg" /></div>
+        </div>
+    </section>
+    <section id="product">
+        <div class="product">
+            <div class="product__gallery">
+                <img alt="" src="http://img.mobilenobo.net/_NSMPQvy5lOuPJj.jpg" /></div>
+            <div class="product__info">
+                <div class="info__header">
+                    Extra Relief Full Spectrum Hemp Extract Oil 2500mg</div>
+                <div class="info__rate">
+                    &nbsp;</div>
+                <div class="info__price">
+                    <span class="old">123грн</span><span class="new">40грн</span></div>
+                <div class="info__list">
+                    <ul>
+                        <li>
+                            Approved in Lab.</li>
+                        <li>
+                            Top-rated Full Spectrum Hemp Extract.</li>
+                        <li>
+                            Ideal for mood enhancement and pain relief.</li>
+                        <li>
+                            Organic and all-natural ingredients.</li>
+                        <li>
+                            Exceptional anxiety relief for everyday stress.</li>
+                    </ul>
+                </div>
+                <div class="payment-partners">
+                    <img alt="paypal" src="http://img.mobilenobo.net/Qhd1G1MJRyc2Wwh.png" /></div>
+                <div class="button__buy">
+                    <a class="btn__buy" href="#">Buy</a></div>
+            </div>
+        </div>
+    </section>
+    <section id="review">
+        <div class="review__header">
+            REVIEWS</div>
+        <div class="review__img">
+            <img alt="" src="http://img.mobilenobo.net/naaZWRQh6NDI3Yx.png" /></div>
+    </section>
+    <section id="video-review">
+        <div class="review__header">
+            WATCH OUR <span>HAPPY CUSTOMERS</span></div>
+        <div class="review__content">
+            <div class="review__video">
+                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/RmMEgriY9VM"></iframe>
+                <div class="video__name">
+                    <span>Name:</span>Kareem <span>Age:</span> 37 <span>State:</span> California</div>
+                <div class="video__comment">
+                    &rdquo;I&#39;ve been suffering from severe back pain and chronic joint pain for most of my adulthood. Until, I have found MaxHemp Wellness&#39;s Hemp Extract Pain Relief Cream. I can finally enjoy my life to full extent.&rdquo;</div>
+            </div>
+            <div class="review__video">
+                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/TolRUhX4gv4"></iframe>
+                <div class="video__name">
+                    <span>Name:</span>Jordan <span>Age:</span> 29 <span>State:</span> Illinois</div>
+                <div class="video__comment">
+                    &rdquo;Anxiety and sleep disorder has always haunted me since college years. But thanks to discovery of MaxHemp Wellness oils I experience overwhelming bliss from its benefits.&rdquo;</div>
+            </div>
+            <div class="review__video">
+                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/YBJ1yBBRS_g"></iframe>
+                <div class="video__name">
+                    <span>Name:</span>Bill <span>Age:</span> 62 <span>State:</span> Maryland</div>
+                <div class="video__comment">
+                    &rdquo;I started to use Hemp Extracts recently and I felt better almost everyday since. I am starting to do more physical activities some of which I have never dreamed of.&rdquo;</div>
+            </div>
+        </div>
+    </section>
+    <section id="timer">
+        <div class="timer__block">
+            <div class="timer__header">
+                HURRY UP!
+                <div class="timer__in-stock">
+                    <div class="ordered">
+                        Ordered: 478</div>
+                    <div class="available">
+                        Only 22 left in stock!</div>
+                </div>
+                <div class="progress-bar">
+                    &nbsp;</div>
+            </div>
+            <div class="countdown" id="countdown">
+                <div class="countdown-number">
+                    <span class="days countdown-time">:</span> <span class="countdown-text">DAYS</span></div>
+                <div class="countdown-number">
+                    <span class="hours countdown-time">:</span> <span class="countdown-text">HRS</span></div>
+                <div class="countdown-number">
+                    <span class="minutes countdown-time">:</span> <span class="countdown-text">MINS</span></div>
+                <div class="countdown-number">
+                    <span class="seconds countdown-time">:</span> <span class="countdown-text">SECS</span></div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="wrapper">
+    <section class="popsection">
+        <div class="wrap2" style="position: relative;">
+            <div id="header2">
+                Pain? Anxiety? Insomnia?<br />
+                NO MORE!!!</div>
+            <section class="flex_sect">
+                <div>
+                    <div class="text">
+                        <span id="text">Buy Full Spectrum 300mg CBD Oil and GET 1 for FREE</span></div>
+                    <div class="mobileoff">
+                        <div class="icontext">
+                            <img src="http://img.mobilenobo.net/wrM6QwKtKIjr9bc.png" /> Exceptional anxiety, insomnia, pain relief</div>
+                        <div class="icontext">
+                            <img src="http://img.mobilenobo.net/wrM6QwKtKIjr9bc.png" /> All-natural ingredients</div>
+                        <div class="icontext">
+                            <img src="http://img.mobilenobo.net/wrM6QwKtKIjr9bc.png" /> Improves brain function and helps weight management</div>
+                        <div class="icontext">
+                            <img src="http://img.mobilenobo.net/wrM6QwKtKIjr9bc.png" /> 100% satisfaction and money-back guarantee</div>
+                    </div>
+                    <img id="gbar" src="http://img.mobilenobo.net/TmB6VnNIJfM_Yb_.jpg" /></div>
+                <div>
+                    <div class="col1 formblock">
+                        <div class="form long">
+                            <div style="padding-bottom: 15px;">
+                                <span id="fhead">GET YOUR DEAL NOW! #1 Best CBD oil in USA</span></div>
+                            <input class="name" name="name" placeholder="First Name" type="text" /><input class="lname" name="lname" placeholder="Last Name" type="text" /> <input class="email" name="email" placeholder="Email" type="text" /><input class="phone" name="phone" placeholder="Phone Number" type="text" value="" />
+                            <div class="dropdown">
+                                <input class="submit" type="submit" value="GET NOW" /></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <section class="delivery-block-v3" style="display: none;">
+                <div class="wrap-nopad">
+                    <h2 class="lvl-title-v1">
+                        How to order <b> Hollywood Smile veneers? </b></h2>
+                    <ul class="list-type-v2 list--circle">
+                        <li>
+                            <div class="list-img">
+                                <img alt="" src="http://img.mobilenobo.net/otpGpioMc7oZ_M1.png" /></div>
+                            <div class="list-cont">
+                                <h4>
+                                    Order</h4>
+                                <p>
+                                    Fill out the order form<br />
+                                    on our website</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-img">
+                                <img alt="" src="http://img.mobilenobo.net/oXbsiMe74d5fsa0.png" /></div>
+                            <div class="list-cont">
+                                <h4>
+                                    Shipping</h4>
+                                <p>
+                                    The order will be shipped for free<br />
+                                    if it is more than 1999 PHP<br />
+                                    in 1-5 business days</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-img">
+                                <img alt="" src="http://img.mobilenobo.net/B_JAUc4FF3O7Chi.png" /></div>
+                            <div class="list-cont">
+                                <h4>
+                                    Delivery</h4>
+                                <p>
+                                    Pay when<br />
+                                    you receive your package</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div align="center" class="terms" style=" display: block;
+
+ padding-bottom: 34px;">
+                <div class="copyright" style="text-align: center;">
+                    <a class="footerLink" href="javascript: void(0)" onclick="window.open('https://maxhempwellness.com/terms-and-condition/', 'windowname1', 'width=770, height=765,  scrollbars=1 ,  '); return false;">Terms &amp; Conditions</a> | <a class="footerLink" href="javascript: void(0)" onclick="window.open('https://maxhempwellness.com/privacy-policy/', 'windowname1', 'width=770, height=765, scrollbars=1'); return false;">Privacy Policy </a>| <a class="footerLink" href="javascript: void(0)" onclick="window.open('https://maxhempwellness.com/return-policy/', 'windowname1', 'width=770, height=765, scrollbars=1'); return false;">Cancelation and Return Policy </a></div>
+                <span>Copyright 2020</span></div>
+        </footer>
+    </section>
+</div>
+<script>
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            daysSpan.innerHTML = "0";
+            hoursSpan.innerHTML = "0";
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.parse(new Date()) +   3 * 60 * 1000); // for endless timer
+    initializeClock('countdown', deadline);
+</script><!-- BACKGROUND --><!-- BACKGROUND ENDS -->
