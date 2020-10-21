@@ -622,9 +622,7 @@ div.preview > a:nth-child(2), .button, .save a {
 	box-shadow: 0 10px 20px #000000c7;
 	overflow: hidden;
 }
-.tip .content {
-	max-width: 495px;
-}
+
 .cont{
 	border:1px solid #ddd;
 	float:left;
@@ -925,7 +923,7 @@ li.menu li a:hover{
 	flex-direction: column;
 	align-items: center;
 }
-.tip .details-grid {}
+
 .love,
 .rating{
 	background:#dcdcdc url(../images/5stars.png) no-repeat;
@@ -1438,7 +1436,9 @@ footer div:nth-child(2) {
 .tip .details-preview {
 	width: 100%;
 	overflow: hidden;
-	height: 220px;
+	min-height: 220px;
+	display: contents;
+
 }
 .tip .details-grid {
 	border: 1px solid #dcdcdc;
