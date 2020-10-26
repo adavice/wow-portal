@@ -210,7 +210,7 @@ header{
 	padding:5px 11px;
 	width:87px;
 	background: var(--highlight) url(../images/arrow.png) no-repeat right;
-	background-size: 30% 100%;
+	background-size: 20% 100%;
 	-moz-border-top-left-radius:.3em;
 	-webkit-border-top-left-radius:.3em;
 	border-top-left-radius:.3em;
@@ -540,6 +540,7 @@ div.preview > a:nth-child(2), .button, .save a {
 	font-size: 16px;
 	margin-right: auto;
 	margin-left: auto;
+	max-width: 180px;
 }
 [class*="details-data"] > div:nth-child(2) {
 	display: none;
@@ -912,7 +913,7 @@ li.menu li a:hover{
 	overflow: hidden;
 }
 .tips .grid .preview img {
-	min-height: 180px;
+	height: 180px;
 	width: auto;}
 .tips h3.data {
 	height: 30px;
@@ -1425,13 +1426,14 @@ footer div:nth-child(2) {
 #unsubscribe {
     margin-bottom: 30px;
 }
+
 .rules .wrap section {
 	padding-top: 20px;
 }
 .
 .tips .grid {
 	width: unset;
-	width: calc(25% - 8px);
+	width: calc(50% - 8px);
 }
 .tip .details-preview {
 	width: 100%;
@@ -1455,6 +1457,13 @@ footer div:nth-child(2) {
 
 .tip .details-preview img {
 	width:auto;
+}
+.tips .grid {
+	float: left;
+	border: 1px solid #eee;
+	width: calc(50% - 8px);
+	padding: 10px;
+	margin: 10px 8px 0 0;
 }
 .tip h3 {
 	color: #477db7;
