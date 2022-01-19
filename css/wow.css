@@ -2100,6 +2100,31 @@ footer div:nth-child(2) {
 }
 
 
+.cont_new{
+	margin: 30px auto;
+    display: block;
+	float: none;
+}
+
+.terms{
+	padding: 20px;
+}
+
+.terms p{
+	padding: 20px 0;
+    line-height: 1.4;
+	font-size: 14px;
+}
+
+.terms ul{
+	line-height: 1.4;
+	font-size: 14px;
+	list-style: initial;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+
 /*terms styles*/
 #terms{
 	padding: 60px;
@@ -2124,9 +2149,6 @@ footer div:nth-child(2) {
 	padding-top: 10px;
 }
 
-.terms ul li {
-	padding-bottom: 20px;
-}
 
 .terms li p {
 	padding-bottom: 10px;
