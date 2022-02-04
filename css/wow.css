@@ -108,7 +108,8 @@ header{
 	max-width: 200px;
 }
 .logo img {
-	height: 85px
+	width: 240px;
+    height: auto;
 }
 /*search form*/
 .search{
@@ -1669,7 +1670,8 @@ footer div:nth-child(2) {
 		margin-bottom: 3px;
 	}
 	.logo a img {
-		width: 60%;
+		width: 100%;
+		height: auto;
 	}
 	.list3 .preview, .list2 .preview {
 		width: 41%;
